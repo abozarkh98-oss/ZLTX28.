@@ -16,7 +16,6 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white">
 
-    <!-- Header -->
     <header class="glass-card sticky top-0 z-40 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3 space-x-reverse">
@@ -42,17 +41,13 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 flex-grow w-full">
-        
-        <!-- Hero Section -->
         <div class="text-center max-w-3xl mx-auto mb-12">
             <span class="bg-purple-500/10 text-purple-400 text-xs font-bold px-4 py-1.5 rounded-full border border-purple-500/20 inline-block mb-4">سرعت بدون مرز با شبکه 5G</span>
             <h2 class="text-3xl sm:text-5xl font-black text-white mb-4 leading-tight">خرید بسته و مدیریت <span class="gradient-text">مودم ZLT X28</span></h2>
             <p class="text-slate-400 text-sm sm:text-base">بسته مورد نظر خود را انتخاب کرده یا برای مشاهده میزان حجم باقی‌مانده وارد حساب کاربری شوید.</p>
         </div>
 
-        <!-- Package Tabs -->
         <div class="flex justify-center mb-10">
             <div class="glass-card p-1.5 rounded-2xl inline-flex gap-2 border border-slate-800">
                 <button onclick="switchTab('daily')" id="btn-daily" class="px-6 py-2.5 rounded-xl text-sm font-bold transition glow-btn text-white">روزه</button>
@@ -61,18 +56,15 @@
             </div>
         </div>
 
-        <!-- Packages Grid -->
         <div id="packages-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"></div>
     </main>
 
-    <!-- Login & Dashboard Modal -->
     <div id="login-modal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4">
         <div class="glass-card max-w-md w-full p-6 rounded-3xl relative border border-purple-500/20">
             <button onclick="closeModal('login-modal')" class="absolute top-4 left-4 text-slate-400 hover:text-white">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
 
-            <!-- Login View -->
             <div id="login-view">
                 <h3 class="text-xl font-bold text-white mb-2 text-center">ورود مشتریان</h3>
                 <p class="text-xs text-slate-400 text-center mb-6">نام کاربری و رمز خود را وارد نمایید</p>
@@ -89,7 +81,6 @@
                 </form>
             </div>
 
-            <!-- Dashboard View -->
             <div id="dashboard-view" class="hidden">
                 <div class="text-center mb-6">
                     <span class="bg-emerald-500/10 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/20">مودم متصل است</span>
@@ -110,7 +101,6 @@
         </div>
     </div>
 
-    <!-- Live Chat Floating Window -->
     <div id="chat-window" class="fixed bottom-6 left-6 w-80 sm:w-96 glass-card rounded-3xl border border-purple-500/30 shadow-2xl z-50 hidden overflow-hidden flex flex-col h-[420px]">
         <div class="bg-gradient-to-r from-purple-600 to-indigo-600 p-4 text-white flex justify-between items-center">
             <div class="flex items-center gap-2">
