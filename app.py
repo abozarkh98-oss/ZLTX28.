@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-# دیتابیس کامل کاربران
+# دیتابیس کاربران
 users_db = {
     "user123": {
         "password": "123",
@@ -74,7 +74,7 @@ def api_order():
         "message": f"بسته {package_name} با موفقیت ثبت شد. مبلغ: {price} تومان"
     })
 
-# --- بخش ادمین (رفع کامل ارورهای 404 و 405 لاگ) ---
+# --- بخش ادمین ---
 @app.route('/admin', methods=['GET', 'POST'])
 def admin_panel():
     if request.method == 'POST':
